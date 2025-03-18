@@ -1,12 +1,9 @@
-import './assets/css/bootstrap.min.css'
-import './css/App.css'
-import './css/responsive.css'
-import Global from './components/Global'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
 
-function App() {
-  return (
-      <Global/>
-  );
-}
-
-export default App;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
